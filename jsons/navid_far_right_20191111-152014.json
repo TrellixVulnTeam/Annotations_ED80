@@ -1,0 +1,882 @@
+{
+    "1573503620.4487538": {
+        "date": "Nov 11 2019 15:20:20.448", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 3.438614746, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 448753851, 
+            "secs": 1573503620
+        }
+    }, 
+    "1573503621.3510733": {
+        "date": "Nov 11 2019 15:20:21.351", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 4.34093415, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 351073255, 
+            "secs": 1573503621
+        }
+    }, 
+    "1573503621.8363795": {
+        "date": "Nov 11 2019 15:20:21.836", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 4.826240407, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 836379512, 
+            "secs": 1573503621
+        }
+    }, 
+    "1573503622.618385": {
+        "date": "Nov 11 2019 15:20:22.618", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 5.608245885, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 618384990, 
+            "secs": 1573503622
+        }
+    }, 
+    "1573503623.1429117": {
+        "date": "Nov 11 2019 15:20:23.142", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 6.132772594, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 142911699, 
+            "secs": 1573503623
+        }
+    }, 
+    "1573503624.4503605": {
+        "date": "Nov 11 2019 15:20:24.450", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 7.440221498, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 450360603, 
+            "secs": 1573503624
+        }
+    }, 
+    "1573503625.4097097": {
+        "date": "Nov 11 2019 15:20:25.409", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 8.399570517, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 409709622, 
+            "secs": 1573503625
+        }
+    }, 
+    "1573503625.9382143": {
+        "date": "Nov 11 2019 15:20:25.938", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 8.928075297, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 938214402, 
+            "secs": 1573503625
+        }
+    }, 
+    "1573503626.8855014": {
+        "date": "Nov 11 2019 15:20:26.885", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 9.875362306, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 885501411, 
+            "secs": 1573503626
+        }
+    }, 
+    "1573503627.3885832": {
+        "date": "Nov 11 2019 15:20:27.388", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 10.378444039, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 388583144, 
+            "secs": 1573503627
+        }
+    }, 
+    "1573503628.4527037": {
+        "date": "Nov 11 2019 15:20:28.452", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 11.44256467, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 452703775, 
+            "secs": 1573503628
+        }
+    }, 
+    "1573503629.4263306": {
+        "date": "Nov 11 2019 15:20:29.426", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 12.41619151, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 426330615, 
+            "secs": 1573503629
+        }
+    }, 
+    "1573503629.9253376": {
+        "date": "Nov 11 2019 15:20:29.925", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 12.91519849, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 925337595, 
+            "secs": 1573503629
+        }
+    }, 
+    "1573503630.735538": {
+        "date": "Nov 11 2019 15:20:30.735", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 13.725398988, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 735538093, 
+            "secs": 1573503630
+        }
+    }, 
+    "1573503631.1467128": {
+        "date": "Nov 11 2019 15:20:31.146", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 14.136573757, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 146712862, 
+            "secs": 1573503631
+        }
+    }, 
+    "1573503632.453193": {
+        "date": "Nov 11 2019 15:20:32.453", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 15.443053945, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 453193050, 
+            "secs": 1573503632
+        }
+    }, 
+    "1573503633.3429456": {
+        "date": "Nov 11 2019 15:20:33.342", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 16.332806461, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 342945566, 
+            "secs": 1573503633
+        }
+    }, 
+    "1573503633.9434752": {
+        "date": "Nov 11 2019 15:20:33.943", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 16.933336182, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 943475287, 
+            "secs": 1573503633
+        }
+    }, 
+    "1573503634.6864452": {
+        "date": "Nov 11 2019 15:20:34.686", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 17.67630616, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 686445265, 
+            "secs": 1573503634
+        }
+    }, 
+    "1573503635.5235667": {
+        "date": "Nov 11 2019 15:20:35.523", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 18.513427635, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 523566740, 
+            "secs": 1573503635
+        }
+    }, 
+    "1573503636.4513743": {
+        "date": "Nov 11 2019 15:20:36.451", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 19.44123516, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 451374265, 
+            "secs": 1573503636
+        }
+    }, 
+    "1573503637.3653746": {
+        "date": "Nov 11 2019 15:20:37.365", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 20.35523557, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 365374675, 
+            "secs": 1573503637
+        }
+    }, 
+    "1573503637.8747132": {
+        "date": "Nov 11 2019 15:20:37.874", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 20.864574061, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 874713166, 
+            "secs": 1573503637
+        }
+    }, 
+    "1573503638.7552388": {
+        "date": "Nov 11 2019 15:20:38.755", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 21.745099576, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 755238681, 
+            "secs": 1573503638
+        }
+    }, 
+    "1573503639.382656": {
+        "date": "Nov 11 2019 15:20:39.382", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 22.372517072, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 382656177, 
+            "secs": 1573503639
+        }
+    }, 
+    "1573503640.450816": {
+        "date": "Nov 11 2019 15:20:40.450", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 23.440676911, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 450816016, 
+            "secs": 1573503640
+        }
+    }, 
+    "1573503641.2537868": {
+        "date": "Nov 11 2019 15:20:41.253", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 24.243647814, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 253786919, 
+            "secs": 1573503641
+        }
+    }, 
+    "1573503641.824286": {
+        "date": "Nov 11 2019 15:20:41.824", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 24.814146808, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 824285913, 
+            "secs": 1573503641
+        }
+    }, 
+    "1573503642.7177792": {
+        "date": "Nov 11 2019 15:20:42.717", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 25.707640033, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 717779138, 
+            "secs": 1573503642
+        }
+    }, 
+    "1573503643.5572486": {
+        "date": "Nov 11 2019 15:20:43.557", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 26.547109515, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 557248620, 
+            "secs": 1573503643
+        }
+    }, 
+    "1573503644.451623": {
+        "date": "Nov 11 2019 15:20:44.451", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 27.441483772, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 451622877, 
+            "secs": 1573503644
+        }
+    }, 
+    "1573503645.2567513": {
+        "date": "Nov 11 2019 15:20:45.256", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 28.246612255, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 256751360, 
+            "secs": 1573503645
+        }
+    }, 
+    "1573503645.8270307": {
+        "date": "Nov 11 2019 15:20:45.827", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 28.816891542, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 827030647, 
+            "secs": 1573503645
+        }
+    }, 
+    "1573503646.7022161": {
+        "date": "Nov 11 2019 15:20:46.702", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 29.69207702, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 702216125, 
+            "secs": 1573503646
+        }
+    }, 
+    "1573503647.2636435": {
+        "date": "Nov 11 2019 15:20:47.263", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 30.253504488, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 263643593, 
+            "secs": 1573503647
+        }
+    }, 
+    "1573503648.4491606": {
+        "date": "Nov 11 2019 15:20:48.449", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 31.439021401, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 449160506, 
+            "secs": 1573503648
+        }
+    }, 
+    "1573503649.2899303": {
+        "date": "Nov 11 2019 15:20:49.289", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 32.279791242, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 289930347, 
+            "secs": 1573503649
+        }
+    }, 
+    "1573503649.9084768": {
+        "date": "Nov 11 2019 15:20:49.908", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 32.898337778, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 908476883, 
+            "secs": 1573503649
+        }
+    }, 
+    "1573503650.7184732": {
+        "date": "Nov 11 2019 15:20:50.718", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 33.708334013, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 718473118, 
+            "secs": 1573503650
+        }
+    }, 
+    "1573503651.2238178": {
+        "date": "Nov 11 2019 15:20:51.223", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 34.213678753, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 223817858, 
+            "secs": 1573503651
+        }
+    }, 
+    "1573503652.4515073": {
+        "date": "Nov 11 2019 15:20:52.451", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 35.441368164, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 451507269, 
+            "secs": 1573503652
+        }
+    }, 
+    "1573503654.1261368": {
+        "date": "Nov 11 2019 15:20:54.126", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 37.115997668, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 126136773, 
+            "secs": 1573503654
+        }
+    }, 
+    "1573503654.618228": {
+        "date": "Nov 11 2019 15:20:54.618", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 37.608088958, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 618228063, 
+            "secs": 1573503654
+        }
+    }, 
+    "1573503655.2340274": {
+        "date": "Nov 11 2019 15:20:55.234", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 38.223888197, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 234027302, 
+            "secs": 1573503655
+        }
+    }, 
+    "1573503655.8170116": {
+        "date": "Nov 11 2019 15:20:55.817", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 38.806872398, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 817011503, 
+            "secs": 1573503655
+        }
+    }, 
+    "1573503656.453162": {
+        "date": "Nov 11 2019 15:20:56.453", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 39.443022867, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 453161972, 
+            "secs": 1573503656
+        }
+    }, 
+    "1573503657.4514487": {
+        "date": "Nov 11 2019 15:20:57.451", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 40.441309578, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 451448683, 
+            "secs": 1573503657
+        }
+    }, 
+    "1573503657.8735065": {
+        "date": "Nov 11 2019 15:20:57.873", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 40.863367557, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 873506662, 
+            "secs": 1573503657
+        }
+    }, 
+    "1573503658.7071838": {
+        "date": "Nov 11 2019 15:20:58.707", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 41.697044837, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 707183942, 
+            "secs": 1573503658
+        }
+    }, 
+    "1573503659.4115086": {
+        "date": "Nov 11 2019 15:20:59.411", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 42.401369371, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 411508476, 
+            "secs": 1573503659
+        }
+    }, 
+    "1573503660.4526937": {
+        "date": "Nov 11 2019 15:21:00.452", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 43.44255462, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 452693725, 
+            "secs": 1573503660
+        }
+    }, 
+    "1573503661.5196457": {
+        "date": "Nov 11 2019 15:21:01.519", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 44.509506595, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 519645700, 
+            "secs": 1573503661
+        }
+    }, 
+    "1573503661.9807353": {
+        "date": "Nov 11 2019 15:21:01.980", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 44.970596082, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 980735187, 
+            "secs": 1573503661
+        }
+    }, 
+    "1573503662.698959": {
+        "date": "Nov 11 2019 15:21:02.698", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 45.688820114, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 698959219, 
+            "secs": 1573503662
+        }
+    }, 
+    "1573503663.3138173": {
+        "date": "Nov 11 2019 15:21:03.313", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 46.303678076, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 313817181, 
+            "secs": 1573503663
+        }
+    }, 
+    "1573503664.4505885": {
+        "date": "Nov 11 2019 15:21:04.450", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 47.44044939, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 450588495, 
+            "secs": 1573503664
+        }
+    }, 
+    "1573503665.4820135": {
+        "date": "Nov 11 2019 15:21:05.482", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 48.471874249, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 482013354, 
+            "secs": 1573503665
+        }
+    }, 
+    "1573503666.0229712": {
+        "date": "Nov 11 2019 15:21:06.022", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 49.012831989, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 22971094, 
+            "secs": 1573503666
+        }
+    }, 
+    "1573503666.8630855": {
+        "date": "Nov 11 2019 15:21:06.863", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 49.852946454, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 863085559, 
+            "secs": 1573503666
+        }
+    }, 
+    "1573503667.6279738": {
+        "date": "Nov 11 2019 15:21:07.627", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 50.617834669, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 627973774, 
+            "secs": 1573503667
+        }
+    }, 
+    "1573503668.452326": {
+        "date": "Nov 11 2019 15:21:08.452", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 51.442187016, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 452326121, 
+            "secs": 1573503668
+        }
+    }, 
+    "1573503669.5276814": {
+        "date": "Nov 11 2019 15:21:09.527", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 52.517542137, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 527681242, 
+            "secs": 1573503669
+        }
+    }, 
+    "1573503670.0610287": {
+        "date": "Nov 11 2019 15:21:10.061", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 53.050889617, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 61028722, 
+            "secs": 1573503670
+        }
+    }, 
+    "1573503670.883874": {
+        "date": "Nov 11 2019 15:21:10.883", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 53.873734885, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 883873990, 
+            "secs": 1573503670
+        }
+    }, 
+    "1573503671.6643832": {
+        "date": "Nov 11 2019 15:21:11.664", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 54.654244107, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 664383212, 
+            "secs": 1573503671
+        }
+    }, 
+    "1573503672.4492042": {
+        "date": "Nov 11 2019 15:21:12.449", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 55.439065108, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 449204213, 
+            "secs": 1573503672
+        }
+    }, 
+    "1573503673.536252": {
+        "date": "Nov 11 2019 15:21:13.536", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 56.526112808, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 536251913, 
+            "secs": 1573503673
+        }
+    }, 
+    "1573503673.8960094": {
+        "date": "Nov 11 2019 15:21:13.896", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 56.885870286, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 896009391, 
+            "secs": 1573503673
+        }
+    }, 
+    "1573503674.768833": {
+        "date": "Nov 11 2019 15:21:14.768", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 57.758693755, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 768832860, 
+            "secs": 1573503674
+        }
+    }, 
+    "1573503675.6207514": {
+        "date": "Nov 11 2019 15:21:15.620", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 58.610612262, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 620751367, 
+            "secs": 1573503675
+        }
+    }, 
+    "1573503676.4540179": {
+        "date": "Nov 11 2019 15:21:16.454", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 59.443878849, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 454017954, 
+            "secs": 1573503676
+        }
+    }, 
+    "1573503677.4742162": {
+        "date": "Nov 11 2019 15:21:17.474", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 60.464077196, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 474216301, 
+            "secs": 1573503677
+        }
+    }, 
+    "1573503678.0351467": {
+        "date": "Nov 11 2019 15:21:18.035", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 61.025007679, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 35146784, 
+            "secs": 1573503678
+        }
+    }, 
+    "1573503678.8307612": {
+        "date": "Nov 11 2019 15:21:18.830", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 61.820622053, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 830761158, 
+            "secs": 1573503678
+        }
+    }, 
+    "1573503679.4617612": {
+        "date": "Nov 11 2019 15:21:19.461", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 62.451622239, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 461761344, 
+            "secs": 1573503679
+        }
+    }, 
+    "1573503680.4496257": {
+        "date": "Nov 11 2019 15:21:20.449", 
+        "id": 0, 
+        "key": "start", 
+        "rel_time_sec": 63.439486693, 
+        "text": "Reaching trajectory started", 
+        "timestamp": {
+            "nsecs": 449625798, 
+            "secs": 1573503680
+        }
+    }, 
+    "1573503681.3949208": {
+        "date": "Nov 11 2019 15:21:21.394", 
+        "id": 1, 
+        "key": "reached", 
+        "rel_time_sec": 64.384781739, 
+        "text": "Hand reached to object; object about to be grasped", 
+        "timestamp": {
+            "nsecs": 394920844, 
+            "secs": 1573503681
+        }
+    }, 
+    "1573503681.8871398": {
+        "date": "Nov 11 2019 15:21:21.887", 
+        "id": 3, 
+        "key": "top", 
+        "rel_time_sec": 64.877000704, 
+        "text": "Object at the top", 
+        "timestamp": {
+            "nsecs": 887139809, 
+            "secs": 1573503681
+        }
+    }, 
+    "1573503682.7517397": {
+        "date": "Nov 11 2019 15:21:22.751", 
+        "id": 6, 
+        "key": "retract", 
+        "rel_time_sec": 65.741600695, 
+        "text": "Retracting trajectory started", 
+        "timestamp": {
+            "nsecs": 751739800, 
+            "secs": 1573503682
+        }
+    }, 
+    "1573503683.5615876": {
+        "date": "Nov 11 2019 15:21:23.561", 
+        "id": 7, 
+        "key": "rest", 
+        "rel_time_sec": 66.551448453, 
+        "text": "Hand at rest again after retraction", 
+        "timestamp": {
+            "nsecs": 561587558, 
+            "secs": 1573503683
+        }
+    }
+}
