@@ -1,4 +1,5 @@
 import sys
+import os
 import argparse
 import json
 import rosbag
@@ -14,18 +15,34 @@ required.add_argument("--input", "-i", help="set the input bag file", required=T
 required.add_argument("--annotation", "-a", help="set the annotation file", required=True)
 args = parser.parse_args()
 
-if __name__ == "__main__":
+def initVars():
     # set the values from the arguments
     topic = args.topic
-    start_tag = args.start
-    end_tag = args.end
+    start = args.start
+    end = args.end
+     
     bagFile = str(args.input)
     bag = rosbag.Bag(bagFile)
-    print(bagFile)
     if not bagFile.endswith(".bag"):
-        Exception: "Input file should be a .bag file"
+        raise NameError("Input file should be a .bag file")
+
     jsonFile = args.annotation
-    print(jsonFile)
+    if not jsonFile.endswith(".json"):
+        raise NameError("Annotation file should be a .json file")
 
+    return topic, start, end, bag, jsonFile
+
+# prints out all available topics of the given bag file
+def findTopics(bag):
+    topics = bag.get_type_and_topic_info()[1].keys()
+    types = []
+    for i in range(0, len(bag.get_type_and_topic_info()[1].values())):
+        types.append(bag.get_type_and_topic_info()[1].values()[i][0])
+    print(types)
+
+if __name__ == "__main__":
+    set_topic, start_tag, end_tag, bag, jFile = initVars()
     
+    findTopics(bag)
 
+    bag.close()   

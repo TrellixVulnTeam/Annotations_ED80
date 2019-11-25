@@ -1,7 +1,13 @@
 #%%
 import json
 import os
+import sys
 
+path = os.getcwd()
+json_path = path + "/jsons"
+
+# takes in a list of file names and returns a list
+# of only json files
 def get_json_files(file_directory):
     json_files = []
     for f in file_directory:
@@ -9,28 +15,36 @@ def get_json_files(file_directory):
             json_files.append(f)
     return json_files
 
+
+# takes in a list of json files and returns a list
+# of jsons (dictionaries)
 def get_jsons(json_files):
-    list_files = []
+    list_jsons = []
     for f in json_files:
+        f = json_path + "/" + f
         jfile = open(f, 'r')
-        list_files.append(json.load(jfile))
-    return list_files
+        list_jsons.append(json.load(jfile))
+    return list_jsons
 
-
-
-def verify(jfile):
+# verifies the order of tags in the input json
+def verify(json_dict):
     instructions = ['start', 'reached', 'top', 'retract', 'rest']
     index = 0
     verified = True
-    for k in jfile:
-        entry = jfile[k]
+
+    
+    keys = sorted(list(json_dict.keys()))
+    for k in keys:
+        entry = json_dict[k]
         if entry["key"] == instructions[index]:
             index += 1
         else:
-            #print("Error in " + jfile)
+            #print("Error in " + json_dict)
             verified = False
             
-            print("error -> " + str(entry.get("rel_time_sec")))
+            err = "error -> " + str(entry.get("rel_time_sec"))
+            err = err + "\tread %s when the next command should be %s (prev is %s)" % (entry["key"], instructions[index], instructions[index -1])
+            print(err)
             index = instructions.index(entry.get("key")) + 1
         if index > 4:
             index = 0
@@ -40,12 +54,12 @@ def verify(jfile):
 
 
 if __name__ == "__main__":
-    all_files = os.listdir()
+    all_files = os.listdir(json_path)
     json_files = get_json_files(all_files) # list of json files (file names)
     jsons = get_jsons(json_files)  # list of jsons 
-    for jfile in jsons:  # each json from list of jsons
-        if  not verify(jfile):
-            index = jsons.index(jfile)
+    for json_dict in jsons:  # each json from list of jsons
+        if not verify(json_dict):
+            index = jsons.index(json_dict)
             print("ERROR: " + json_files[index])
 
 #%%
