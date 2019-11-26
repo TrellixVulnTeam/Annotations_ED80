@@ -1,4 +1,3 @@
-#%%
 import json
 import os
 import sys
@@ -61,5 +60,3 @@ if __name__ == "__main__":
         if not verify(json_dict):
             index = jsons.index(json_dict)
             print("ERROR: " + json_files[index])
-
-#%%
