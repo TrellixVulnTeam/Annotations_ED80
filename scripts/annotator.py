@@ -87,34 +87,20 @@ def write_to_seperate_files(start_times, end_times, outputJSON):
 
 # sends each key to the appropriate file
 def send_to_files(start_times, end_times, full_dict, filename):
-    '''    message_time = [message["timestamp"]["secs"], message["timestamp"]["nsecs"]]
-
-    for start, end in zip(start_times, end_times):
-        if time_lessthan(message_time, end) and time_greaterthan(message_time, start):
-            index = start_times.index(start)
-            filename = str(index) + ".txt"
-            print(filename)
-            sectioned_file = open(filename, "a+")
-            sectioned_file.write(message)
-            sectioned_file.close()
-
-            pass
-    '''
-
     for entry in full_dict:
-        print("entry in ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+       #print("entry in ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         msg = full_dict[entry]
         msg_time = [msg["timestamp"]["secs"], msg["timestamp"]["nsecs"]]
         for start, end in zip(start_times, end_times):
-            print(start.secs, "AND", end.secs)
-            print(msg_time)
+            #print(start.secs, "AND", end.secs)
+            #print(msg_time)
             if time_lessthan(msg_time, end) and time_greaterthan(msg_time, start):
-                print("IN TIME")
+                #print("IN TIME")
                 index = start_times.index(start)
-                filename = str(index) + ".txt"
-                print(filename)
-                sectioned_file = open(filename, "a+")
-                sectioned_file.write(message)
+                name = filename + str(index) + ".txt"
+                print(name)
+                sectioned_file = open(name, "a+")
+                sectioned_file.write(str(msg["msg"]))
                 sectioned_file.close()
                 pass
 
@@ -180,8 +166,12 @@ if __name__ == "__main__":
         # increase index of the json keys
         index += 1
     
+    # dump dictionary to json
     json.dump(output_dict, output, sort_keys=True, indent=3)
-    send_to_files(start_times, end_times, output_dict, output.name)
+    # create copied output file name
+    filename = str(output.name)[:-5]
+    # send messages to appropriate files
+    send_to_files(start_times, end_times, output_dict, filename)
     
     output.close()
     bag.close()   
