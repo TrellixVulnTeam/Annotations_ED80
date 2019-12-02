@@ -10,6 +10,8 @@ from rospy_message_converter import message_converter
 from std_msgs.msg import String
 import genpy
 
+from collections import OrderedDict as ODict
+
 path = os.getcwd()
 json_path = path + "/jsons"
 
@@ -69,7 +71,7 @@ def find_times(start, end, json_dict):
         entry = json_dict[k]
         if entry["key"] == start:
             time = genpy.Time(entry["timestamp"]["secs"], entry["timestamp"]["nsecs"])
-            start_times.append(time) # append k b/c k is the rostime 
+            start_times.append(time) 
         if entry["key"] == end:
             time = genpy.Time(entry["timestamp"]["secs"], entry["timestamp"]["nsecs"])
             end_times.append(time)
@@ -83,9 +85,9 @@ def write_to_seperate_files(start_times, end_times, outputJSON):
         #l = l[:-1]
         send_to_file(start_times, end_times, l, outputJSON.name)
 
-# sends each line to the appropriate file
-def send_to_file(start_times, end_times, message, filename):
-    message_time = [message["timestamp"]["secs"], message["timestamp"]["nsecs"]]
+# sends each key to the appropriate file
+def send_to_files(start_times, end_times, full_dict, filename):
+    '''    message_time = [message["timestamp"]["secs"], message["timestamp"]["nsecs"]]
 
     for start, end in zip(start_times, end_times):
         if time_lessthan(message_time, end) and time_greaterthan(message_time, start):
@@ -97,6 +99,25 @@ def send_to_file(start_times, end_times, message, filename):
             sectioned_file.close()
 
             pass
+    '''
+
+    for entry in full_dict:
+        print("entry in ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        msg = full_dict[entry]
+        msg_time = [msg["timestamp"]["secs"], msg["timestamp"]["nsecs"]]
+        for start, end in zip(start_times, end_times):
+            print(start.secs, "AND", end.secs)
+            print(msg_time)
+            if time_lessthan(msg_time, end) and time_greaterthan(msg_time, start):
+                print("IN TIME")
+                index = start_times.index(start)
+                filename = str(index) + ".txt"
+                print(filename)
+                sectioned_file = open(filename, "a+")
+                sectioned_file.write(message)
+                sectioned_file.close()
+                pass
+
 
 
 # compares time1 and time2
@@ -134,31 +155,33 @@ if __name__ == "__main__":
     
 
     [start_times, end_times] = find_times(start_tag, end_tag, json_dict)
-    '''
-        for start, end in zip(start_times, end_times):
-            bag = rosbag.Bag('thebag.bag')
-            # print(bag)
-    '''
+
     # print("HERE >>> topic={}, start={}, end={}".format(set_topic, start, end))
     # print(set_topic)
     # print(type(set_topic))
 
+    # empty ordered dictionary stolen from annotator widget
+    output_dict = ODict()
+    index = 0
+
+    # go through all specified messages
     for msg_topic, msg, t in bag.read_messages(topics = set_topic):
-        # msg = String(data = "Help")
-        # if msg_topic == set_topic:
 
+        # convert message with ros converter
         full_message = message_converter.convert_ros_message_to_dictionary(msg)
-        dict_out = {"timestamp": {"secs": t.secs, 
+        # create new dict for json entries
+        output_dict[index] = {"timestamp": {"secs": t.secs, 
                                   "nsecs": t.nsecs},
-                    "msg": full_message}
+                            "msg": full_message}
+        # printing for visualization
         print(full_message)
-        send_to_file(start_times, end_times, dict_out, output.name)
 
-        json_dict = json.dumps(dict_out)
-        output.write(json_dict)
-        output.write("\n")
-
-    name = output.name
+        #send_to_file(start_times, end_times, dict_out, output.name)
+        # increase index of the json keys
+        index += 1
+    
+    json.dump(output_dict, output, sort_keys=True, indent=3)
+    send_to_files(start_times, end_times, output_dict, output.name)
+    
     output.close()
-
     bag.close()   
