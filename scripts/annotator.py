@@ -15,7 +15,9 @@ from collections import OrderedDict as ODict
 path = os.getcwd()
 json_path = path + "/jsons"
 
-text = 'This is a test program. It demonstrates how to use the argparse module with a program description.'
+text = """This program will create multiple .txt files of the ROS messages that are in the input .bag file. It chooses which messages 
+    to  record by using the given annotation .json file and creating time frames between the two input 
+    annotation tags. Each different created file is a different timeframe.""" 
 
 parser = argparse.ArgumentParser(description = text)
 required = parser.add_argument_group("required file arguments")
@@ -78,15 +80,15 @@ def find_times(start, end, json_dict):
     
     return [start_times, end_times]
 
-
-# writes the messages to their separate output files
-def write_to_seperate_files(start_times, end_times, outputJSON):
-    for l in outputJSON:
-        #l = l[:-1]
-        send_to_file(start_times, end_times, l, outputJSON.name)
-
 # sends each key to the appropriate file
 def send_to_files(start_times, end_times, full_dict, filename):
+    # create subdirectory for all the output files
+    sub_dir = filename + "_messages/"
+    try:
+        os.mkdir(sub_dir, 0o777)
+    except OSError as err:
+        print(err)
+
     for entry in full_dict:
        #print("entry in ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         msg = full_dict[entry]
@@ -99,7 +101,7 @@ def send_to_files(start_times, end_times, full_dict, filename):
                 index = start_times.index(start)
                 name = filename + str(index) + ".txt"
                 print(name)
-                sectioned_file = open(name, "a+")
+                sectioned_file = open(sub_dir + name, "a+")
                 sectioned_file.write(str(msg["msg"]))
                 sectioned_file.close()
                 pass
@@ -155,14 +157,15 @@ if __name__ == "__main__":
 
         # convert message with ros converter
         full_message = message_converter.convert_ros_message_to_dictionary(msg)
+
         # create new dict for json entries
         output_dict[index] = {"timestamp": {"secs": t.secs, 
                                   "nsecs": t.nsecs},
                             "msg": full_message}
+
         # printing for visualization
         print(full_message)
 
-        #send_to_file(start_times, end_times, dict_out, output.name)
         # increase index of the json keys
         index += 1
     
