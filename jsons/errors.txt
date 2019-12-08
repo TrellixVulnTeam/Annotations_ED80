@@ -1,0 +1,21 @@
+### ERRORS IN ANNOTATION FILES ###
+
+Missing a 'retracted' tag around 38.574
+    -> sharif_demo_near_right_20191111-152526.json
+
+
+
+the following annotation files have start/rest overlap errors.
+this is caused during annotating, since the annotator cannont hear the start beeps,
+the arm may appear to be at rest, when in fact a beep had just been played.
+this issue can cause a rest to be recorded immediately following a start.
+this creates 3 errors through the checker.py in the order of -start, -rest, -reached
+
+a new method needs to be implemented to detect this specific error and perhaps fix it.
+
+FILES: 
+    - mehrdad_far_right_20191107-134022.json
+    - mehrdad_near_left_20191107-133826.json
+    - zhong_far_left_20191108-162941.json
+    - zhong_near_right_20191108-162507.json
+    - zhong_near_left_20191108-162642.json
